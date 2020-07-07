@@ -1,0 +1,24 @@
+{
+    "rank": [
+        {
+            "name": "test1",
+            "point": 1
+        },
+        {
+            "name": "test2",
+            "point": 2
+        },
+        {
+            "name": "test3",
+            "point": 3
+        },
+        {
+            "name": "test4",
+            "point": 4
+        },
+        {
+            "name": "test5",
+            "point": 5
+        }
+    ]
+}
