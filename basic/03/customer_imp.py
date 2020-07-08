@@ -1,5 +1,6 @@
+import re
 import cust
-
+custlist=[{'name': 'asdf', 'gender': 'F', 'email': 'asdf123@naver.com', 'birthyear': '1923'}]
 page=0
 
 while True:
@@ -13,4 +14,4 @@ while True:
     D - 고객 정보 삭제
     Q - 프로그램 종료
     ''')
-    cust.exe(choice, page)
+    exe(choice, page)
