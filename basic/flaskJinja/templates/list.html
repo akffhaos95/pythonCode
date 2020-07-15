@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+파일 목록
+{% endblock %}
+{% block content %}
+    <br>
+    <h1 class="blockquote text-center">이력서</h1>
+    <div class="container">
+        <img class="rounded float-right" width=200 height=200 src="/files/{{dir}}"/>      
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">key</th>
+                <th scope="col">value</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for key, value in result.items() %}
+              <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>   
+        </table>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

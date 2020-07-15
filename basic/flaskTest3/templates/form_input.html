@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <head>
+        <title>input</title>
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST" action="/login" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="file">
+                    <button type="submit">파일 업로드</button>
+                </div>
+                <div class="form-group">
+                    <label>이름</label>
+                    <input type="text" class="form-control" name="이름">
+                </div>  
+                <div class="form-group">
+                    <label>이메일</label>
+                    <input type="email" class="form-control" name="이메일" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label>학적</label>
+                    <select class="form-control" name="학적">
+                      <option>고졸</option>
+                      <option>대학재학</option>
+                      <option>대학졸업</option>
+                    </select>
+                </div>
+                <div>
+                    <label>자신있는 언어</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="자신있는 언어" value="JAVA">
+                        <label class="form-check-label" for="inlineCheckbox1">JAVA</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox2" name="자신있는 언어" value="Python">
+                        <label class="form-check-label" for="inlineCheckbox2">Python</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="자신있는 언어" value="R">
+                        <label class="form-check-label" for="inlineCheckbox3">R</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="formControlRange">수강 만족도</label>
+                        <input type="range" class="form-control-range" name="수강 만족도" id="formControlRange">
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
