@@ -164,8 +164,9 @@ def ajaxlist():
 def ajaxlistpost():
     connection = create_conn()
     userid = request.form.get('userid')
-    
-    
+    data = User.query.filter(User.userid.like('%'+userid+'%'))
+    df = pd.read_sql(data.statement, data.session.bind)
+    result = df.to_json(orient='records')
     # try:
     #     with connection.cursor() as cursor:
     #         sql="select * from users where userid like %s"
